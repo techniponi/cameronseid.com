@@ -13,6 +13,7 @@ $(document).ready(function () {
 	// init modals
 	$('#materializelicense').modal();
 	$('#jquerylicense').modal();
+	$('#webpacklicense').modal();
 
 	// init.js
 	$('.parallax').parallax();
