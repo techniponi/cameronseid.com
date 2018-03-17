@@ -3,3 +3,4 @@
 .vs/
 *.log
 Web.config
+node_modules/

@@ -1,4 +1,6 @@
 {
 	"jquery": true,
-	"browser": true
+	"browser": true,
+	"node": true,
+	"esversion": 6
 }

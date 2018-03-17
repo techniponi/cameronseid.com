@@ -6,47 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Cameron Seid</title>
 
-	<!-- CSS  -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<!--  Scripts-->
+	<!-- For some reason, loading jquery like this is necessary. -->
+	<script src="jquery.js"></script>
+	<script src="bundle.js"></script>
 </head>
 
 <body>
 	<!-- Header -->
-	<nav class="white" role="navigation">
-		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo" style="font-size: 20px">
-				<b>Cameron Seid</b>
-			</a>
-			<ul class="right hide-on-med-and-down">
-				<li class="active">
-					<a href="#">Computer Services</a>
-				</li>
-				<li>
-					<a href="attributions.html">Attributions</a>
-				</li>
-				<li>
-					<a href="https://github.com/techniponi/cameronseid.com">Source</a>
-				</li>
-			</ul>
-
-			<ul id="nav-mobile" class="side-nav">
-				<li class="active">
-					<a href="#">Computer Services</a>
-				</li>
-				<li>
-					<a href="attributions.html">Attributions</a>
-				</li>
-				<li>
-					<a href="https://github.com/techniponi/cameronseid.com">Source</a>
-				</li>
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse">
-				<i class="material-icons">menu</i>
-			</a>
-		</div>
-	</nav>
+	<div id="csheader"></div>
 
 	<!-- MAIN PAGE BODY -->
 	<!-- Title -->
@@ -274,28 +242,8 @@
 	</div>
 
 	<!-- FOOTER -->
-	<footer class="page-footer teal">
-		<div class="container center">
-			<h5 class="white-text">About Me</h5>
-			<div class="container center">
-				<div class="container center">
-					<p class="grey-text text-lighten-4" style="text-align: justify;">
-						I am currently attending college at Wharton County Junior College (University of Houston Sugar Land campus) to be a video game developer. I've lived in Sugar Land for the vast majority of my life, and my lifelong affinity for computers has brought me to this point.
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container center">
-				<a href="/resume.pdf" style="text-align: center; color: rgba(172, 236, 230, 1);">Resumé</a>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
+	<div id="csfooter">
+	</div>
 
 </body>
 
