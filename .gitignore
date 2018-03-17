@@ -1,0 +1,5 @@
+*.iml
+*.sln
+.vs/
+*.log
+Web.config
