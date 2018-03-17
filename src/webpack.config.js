@@ -27,13 +27,25 @@ module.exports = {
 					}
 				}],
 			},
+			{
+				test: /\.js$/,
+				use: [{
+					loader: 'babel-loader',
+					query: {
+						presets: ['es2015']
+					}
+				}]
+			}
     	]
 	},
 	externals: {
 		jquery: 'jQuery'
 	},
+	stats: {
+		colors: true
+	},
 	plugins: [
-    new webpack.ProvidePlugin({
+    	new webpack.ProvidePlugin({
 			"Hammer": "hammerjs/hammer"
 		})
   ],
@@ -44,5 +56,8 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, "../")
-	}
+	},
+	devServer: {
+		contentBase: '../'
+	},
 };

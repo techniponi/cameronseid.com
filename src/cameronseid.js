@@ -1,12 +1,13 @@
-// load css
-import './css/icon.css';
+// css
 import 'materialize-css/dist/css/materialize.css';
 import './css/style.css';
+
+// js
 import 'materialize-css/dist/js/materialize.js';
 
 $(document).ready(function () {
 
-	// load common page elements
+	// load header and footer
 	$('#csheader').load('header.html');
 	$('#csfooter').load('footer.html');
 

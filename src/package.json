@@ -4,7 +4,9 @@
 	"description": "Personal website",
 	"main": "bundle.js",
 	"scripts": {
-		"build": "npx webpack --config webpack.config.js"
+		"build": "npx webpack --config webpack.config.js",
+		"start": "webpack-dev-server --open --mode development",
+		"watch": "webpack --watch"
 	},
 	"repository": {
 		"type": "git",
@@ -22,11 +24,13 @@
 		"materialize-css": "^0.100.2"
 	},
 	"devDependencies": {
+		"babel-loader": "^7.1.4",
 		"css-loader": "^0.28.11",
 		"file-loader": "^1.1.11",
 		"style-loader": "^0.20.3",
 		"url-loader": "^1.0.1",
 		"webpack": "^4.1.1",
-		"webpack-cli": "^2.0.12"
+		"webpack-cli": "^2.0.12",
+		"webpack-dev-server": "^3.1.1"
 	}
 }

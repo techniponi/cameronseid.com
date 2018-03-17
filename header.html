@@ -7,10 +7,10 @@
 				<b>Cameron Seid</b>
 			</a>
 		<ul class="right hide-on-med-and-down">
-			<li>
+			<li id="cs-nav-desktop">
 				<a href="index.html">Computer Services</a>
 			</li>
-			<li>
+			<li id="att-nav-desktop">
 				<a href="attributions.html">Attributions</a>
 			</li>
 			<li>
@@ -19,10 +19,10 @@
 		</ul>
 
 		<ul id="nav-mobile" class="side-nav">
-			<li>
+			<li id="cs-nav-mobile">
 				<a href="index.html">Computer Services</a>
 			</li>
-			<li>
+			<li id="att-nav-mobile">
 				<a href="attributions.html">Attributions</a>
 			</li>
 			<li>
@@ -36,8 +36,22 @@
 </nav>
 
 <script>
+	// for some reason, this has to be in here (not in cameronseid.js)
 	$('.button-collapse').sideNav();
 	$('.selector').sideNav();
+
+	// to highlight the correct element
+	console.log(document.title);
+	switch (document.title) {
+		case "Cameron Seid":
+			document.getElementById("cs-nav-desktop").className = "active";
+			document.getElementById("cs-nav-mobile").className = "active";
+			break;
+		case "Attributions":
+			document.getElementById("att-nav-desktop").className = "active";
+			document.getElementById("att-nav-mobile").className = "active";
+			break;
+	}
 
 </script>
 
