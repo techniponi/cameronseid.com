@@ -11,9 +11,9 @@ module.exports = {
 			},
 			{
 				// Match woff2 in addition to patterns like .woff?v=1.1.1.
-				test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(png|woff|woff2|eot|ttf|svg)$/,
 				use: [{
-					loader: "url-loader",
+					loader: "file-loader",
 					options: {
 						// Limit at 50k. Above that it emits separate files
 						limit: 50000,

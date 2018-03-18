@@ -16,7 +16,7 @@ $(document).ready(function () {
 	$('#jquerylicense').modal();
 	$('#webpacklicense').modal();
 
-	// init.js
+	// originally from init.js
 	$('.parallax').parallax();
 
 });
